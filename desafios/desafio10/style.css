@@ -1,0 +1,130 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    color: white;
+    background-image: linear-gradient(to bottom, #129635, #2A4732);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 0px black;
+}
+h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+header > p {
+    text-align: center;
+    padding: 10px;
+}
+nav {
+    padding: 5px;
+    line-height: 1em; 
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+nav > a:hover {
+    color: #1a692f;
+}
+body {
+    background-color: #75C78B;
+}
+
+main {
+    background-color: white;
+    height: auto;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0px auto 0px auto;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+a{
+    color: #1a692f;
+    font: bolder;
+}
+h2 {
+    padding: 20px;
+    font-family: 'Android', 'Times New Roman', Times, serif;
+    color: #1a692f;
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 1.5em;
+}
+img{
+    display: block;
+    margin: 0px auto;
+   }
+
+h3{
+    font-family: 'Android', 'Times New Roman', Times, serif;
+    color: #2b8a46;
+    background-image: linear-gradient(to right, #1a582931, #11aa3c1f, #1eee590e);
+    text-shadow: 1px 1px 1px white;
+}
+
+div.video {
+    position: relative;
+    background-color: #2A4732;
+    height: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+ul {
+    list-style: none;
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    
+}
+aside {
+    background-color: #9fe2b1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205);
+}
+
+aside > h4 {
+    background-color: #39ad58;
+    color: white;
+    padding: 10px;
+    margin: -10px -11px -1px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer {
+    background-color: #1a692f;
+    margin: 15px 0px 0px 0px;
+}
+footer > p {
+    text-align: center;
+    color: white;
+}
