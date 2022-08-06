@@ -9,6 +9,12 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         table {
             border-collapse: collapse;
             width: 500px;
@@ -16,7 +22,6 @@
         td, th {
             border: 1px solid black ;
             padding: 8px;
-            width: 200px;
         }
 
         td.num {
@@ -34,6 +39,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION - legenda
             THEAD
                 TR,TD,TH
             TBODY
@@ -41,12 +47,16 @@
             TFOOTER
                 TR,TD,TH
     -->
+    <!-- scope (alcance) são títulos, seja de uma coluna ou linha-->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
-            <th>Posição</th>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col" style="width: 50px;">Posição</th>
+            <th scope="col">Estado</th>
+            <th scope="col" >População</th>
 
         </thead>
         <tbody>
@@ -189,7 +199,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
 
