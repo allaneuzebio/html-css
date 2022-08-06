@@ -18,10 +18,18 @@
         table {
             border-collapse: collapse;
             width: 500px;
+            position: relative; /* adicionado para colocar um efeito de cabeçalho fixo na tabela*/
+        }
+
+        thead > tr > th { /*usado em cabeçalho fixo, só fica onde tem tabela, não continua em textos*/
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
         td, th {
             border: 1px solid black ;
             padding: 8px;
+            
         }
 
         td.num {
@@ -30,6 +38,13 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n) /* isso quer dizer que de 2 em 2 linhas ele vai colocando uma tarja cinza, se usar ODD vai deixar apenas as linhas ÍMPAR e EVEN na linha par, dá para colocar uma cor diferente em ODD e outra apenas em EVEN */{
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd) {
+            font-weight: bolder;
         }
     </style>
 
