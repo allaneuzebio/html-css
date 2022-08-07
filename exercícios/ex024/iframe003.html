@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis incidunt dolorum veniam nihil soluta quibusdam ducimus ad ipsum! Blanditiis quod ducimus architecto dolores, id molestiae assumenda adipisci consectetur aperiam nulla!</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira Página.</a></li>
+        <li><a href="pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="frame003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur modi inventore velit dicta tempore. Impedit dolorem aut excepturi suscipit at alias modi, repellat facere aperiam reprehenderit. Doloremque consequuntur omnis fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel numquam doloremque nemo, quidem, voluptate deserunt beatae repellat consequuntur rem eveniet doloribus laudantium consequatur facilis non amet iusto deleniti animi.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio, quis modi in eveniet perferendis voluptatem libero quo quia officia nostrum neque suscipit minima praesentium. Possimus, rem iste? Consequuntur, nesciunt.</p>"">
+        <p>Infelizmente seu navegador não é compatível.</p>
+    </iframe>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur blanditiis fugit iure dolorem temporibus tenetur ab molestiae vel! Nemo natus voluptates vel nulla sapiente dolorem sit voluptatum suscipit obcaecati eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officia ducimus ratione obcaecati tenetur quisquam deserunt consequuntur repellat veniam, nulla odit doloribus ab dolore qui perferendis deleniti aliquam voluptate esse!</p>
+</body>
+</html>
