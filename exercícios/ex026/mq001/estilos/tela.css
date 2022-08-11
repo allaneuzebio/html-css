@@ -23,7 +23,6 @@ header > h1 {
 menu ul {
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.486);
-    margin-left: -40px;
 }
 
 menu li {
